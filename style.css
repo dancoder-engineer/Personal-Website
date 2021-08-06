@@ -1,0 +1,41 @@
+body {
+    background-color:lightblue
+
+}
+
+.review {
+    display:block;
+    width:75%;
+    margin:auto;
+    padding:0;
+}
+
+.head {
+    background-color:darkcyan;
+    text-align:center;
+    padding:0;
+    vertical-align: top;
+    margin:0px;
+    float:left;
+    width:100%;
+}
+
+.reviewMain {
+    padding:20px;
+    background-color:aquamarine;
+
+}
+
+.head img {
+    float:left;
+    width:125px;
+    height:125px;
+}
+
+.head h2 { 
+    text-align:center;
+}
+
+.head h3 { 
+    text-align:center;
+}
