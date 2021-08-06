@@ -6,6 +6,7 @@ body {
     background-color:darkcyan;
     text-align:center;
     width:100%;
+    border-radius: 25px;
 }
 
 .review {
@@ -29,7 +30,7 @@ body {
 .reviewMain {
     padding:20px;
     background-color:aquamarine;
-
+    border-radius: 25px;
 }
 
 .head img {
@@ -51,6 +52,7 @@ body {
     width:17%;
     border:8px;
     background-color: mediumslateblue;
+    border-radius: 25px;
 
 }
 
