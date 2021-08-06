@@ -53,3 +53,10 @@ body {
     background-color: mediumslateblue;
 
 }
+
+.right {
+    float:right;
+    background-color:lightblue;
+    display:block;
+    width:80%;
+}
