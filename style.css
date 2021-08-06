@@ -1,13 +1,19 @@
 body {
     background-color:lightblue
+}
 
+#pageTitle {
+    background-color:darkcyan;
+    text-align:center;
+    width:100%;
 }
 
 .review {
     display:block;
-    width:75%;
+    width:80%;
     margin:auto;
     padding:0;
+    float:right;
 }
 
 .head {
@@ -38,4 +44,12 @@ body {
 
 .head h3 { 
     text-align:center;
+}
+
+.leftOne{
+    float:left;
+    width:17%;
+    border:8px;
+    background-color: mediumslateblue;
+
 }
