@@ -33,8 +33,14 @@ body {
     border-radius: 25px;
 }
 
-.head img {
+.albumCover {
     float:left;
+    width:125px;
+    height:125px;
+}
+
+.backCover {
+    float:right;
     width:125px;
     height:125px;
 }
