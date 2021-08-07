@@ -11,7 +11,7 @@ body {
 
 .review {
     display:block;
-    width:80%;
+    width:84%;
     margin:auto;
     padding:0;
     float:right;
@@ -66,13 +66,14 @@ body {
 
 .leftOne{
     padding:10px;
-    width:15%;
+    width:14%;
     border:8px;
     background-color: mediumslateblue;
     border-radius: 25px;
     display:block;
     margin:auto;
     float:left;
+    font-size:.8em;
 }
 
 .leftOneGame{
