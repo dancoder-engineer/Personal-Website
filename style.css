@@ -18,6 +18,15 @@ body {
     background-color:aquamarine;
 }
 
+.reviewGame {
+    display:block;
+    width:88%;
+    margin:auto;
+    padding:0;
+    float:right;
+    background-color:aquamarine;
+}
+
 .head {
     background-color:darkcyan;
     text-align:center;
@@ -64,7 +73,18 @@ body {
     display:block;
     margin:auto;
     float:left;
+}
 
+.leftOneGame{
+    padding:10px;
+    width:10%;
+    border:8px;
+    background-color: mediumslateblue;
+    border-radius: 25px;
+    display:block;
+    margin:auto;
+    float:left;
+    font-size:.8em;
 }
 
 .right {
@@ -88,24 +108,26 @@ body {
     padding:20px;
     background-color:aquamarine;
     float: left;
-    width:75%;
+    width:65%;
     border:0px;
-    border-right:solid;
-    border-color: darkblue;
 }
 
 .gameReviewScreenshots{
     float:right;
     background-color:aquamarine;
-    width:17%;
+    width:30%;
     border:0px;
-    padding:10px;
+    padding:0px;
+    padding:5px;
+    border-left:solid;
+    border-color: darkblue;
 }
 
 .gameScreen{
-    width:80%;
+    width:95%;
     display:block;
     margin:auto;
+    float:initial;
 
 }
 
