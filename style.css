@@ -15,6 +15,7 @@ body {
     margin:auto;
     padding:0;
     float:right;
+    background-color:aquamarine;
 }
 
 .head {
@@ -68,4 +69,43 @@ body {
     background-color:lightblue;
     display:block;
     width:80%;
+}
+
+.pspCover {
+    float:left;
+    height:125px;
+}
+
+.pspBackCover {
+    float:right;
+    height:125px;
+}
+
+.gameReviewMain {
+    padding:20px;
+    background-color:aquamarine;
+    float: left;
+    width:75%;
+    border:0px;
+    border-right:solid;
+    border-color: darkblue;
+}
+
+.gameReviewScreenshots{
+    float:right;
+    background-color:aquamarine;
+    width:17%;
+    border:0px;
+    padding:10px;
+}
+
+.gameScreen{
+    width:80%;
+    display:block;
+    margin:auto;
+
+}
+
+.underText {
+    font-size:.8em;
 }
