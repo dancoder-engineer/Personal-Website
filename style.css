@@ -54,13 +54,16 @@ body {
     text-align:center;
 }
 
+
 .leftOne{
     padding:10px;
-    float:left;
-    width:17%;
+    width:15%;
     border:8px;
     background-color: mediumslateblue;
     border-radius: 25px;
+    display:block;
+    margin:auto;
+    float:left;
 
 }
 
