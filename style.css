@@ -136,3 +136,21 @@ body {
 .underText {
     font-size:.8em;
 }
+
+.ytv {
+    display:block;
+    margin:auto;
+}
+
+.centeredPicture {
+    display:block;
+    margin:auto;
+    width:560px;
+}
+
+.teachingWords {
+    text-align:center;
+    width:50%;
+    display:block;
+    margin:auto;
+}
