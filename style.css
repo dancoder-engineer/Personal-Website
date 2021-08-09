@@ -154,3 +154,9 @@ body {
     display:block;
     margin:auto;
 }
+
+.mainPagePic {
+    display:block;
+    margin:auto;
+    width:20%;
+}
