@@ -23,7 +23,6 @@ main {
 }
 
 #actualReviews {
-
     grid-column-start: 3;
     grid-row-start: 2;
     grid-row-end: span 2;
@@ -37,6 +36,7 @@ main {
     padding:0;
     background-color:aquamarine;
 }
+
 
 .head {
     grid-row-start: 1;
