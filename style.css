@@ -4,7 +4,8 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: 6fr 1fr 12fr
+    grid-template-columns: 4fr 10px 12fr;
+    grid-template-rows: 25px 25px 9fr
 }
 
 #pageTitle {
@@ -15,24 +16,32 @@ main {
 }
 
 .review {
-    display:block;
-    width:80%;
     margin:auto;
     padding:0;
     grid-column-start: 3;
     background-color:aquamarine;
 }
 
+#actualReviews {
+
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+}
+
 .reviewGame {
-    display:block;
-    width:88%;
+    display:grid;
+    grid-template-rows: 125px 1fr;
+    grid-template-columns: 6fr 4fr;
     margin:auto;
     padding:0;
-    grid-column-start: 3;
     background-color:aquamarine;
 }
 
 .head {
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: span 2;
     background-color:darkcyan;
     text-align:center;
     padding:0;
@@ -46,6 +55,7 @@ main {
     padding:20px;
     background-color:aquamarine;
     border-radius: 25px;
+    grid-row-start: 2;
 }
 
 .albumCover {
@@ -71,25 +81,25 @@ main {
 
 .leftOne{
     padding:10px;
-    width:14%;
     border:8px;
     background-color: mediumslateblue;
     border-radius: 25px;
     display:block;
     margin:auto;
     grid-column-start: 1;
+    grid-row-start: 2;
     font-size:.8em;
 }
 
 .leftOneGame{
     padding:10px;
-    width:9%;
     border:8px;
     background-color: mediumslateblue;
     border-radius: 25px;
     display:block;
     margin:auto;
     grid-column-start: 1;
+    grid-row-start: 2;
     font-size:.75em;
 }
 
@@ -112,18 +122,17 @@ main {
 
 .gameReviewMain {
     padding:20px;
+    grid-column-start: 1;
     background-color:aquamarine;
-    float: left;
-    width:65%;
     border:0px;
     border-right:solid;
     border-color: darkblue;
+    
 }
 
 .gameReviewScreenshots{
-    float:right;
     background-color:aquamarine;
-    width:30%;
+    grid-column-start: 2;
     border:0px;
     padding:0px;
     padding:5px;
