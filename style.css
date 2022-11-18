@@ -173,3 +173,13 @@ main {
     margin:auto;
     width:20%;
 }
+
+
+.portfolioEntry {
+    margin:auto;
+    padding:0;
+    width: 80%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color:aquamarine;
+}

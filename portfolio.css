@@ -1,0 +1,9 @@
+#portImg {
+    display: block;
+    margin: auto;
+    width: 50%
+}
+
+.blackBackground{
+    background-color: black;
+}
