@@ -19,3 +19,25 @@
 .blackBackground{
     background-color: black;
 }
+
+@media only screen and (max-device-width: 800px) {
+
+    #portImg {
+        display: block;
+        margin: auto;
+        width: 95%
+    }
+    
+    #navBar {
+        display: block;
+        margin: auto;
+        width: 95%
+    }
+    
+    #portVideo {
+        display: none;
+        margin: auto;
+        width: 95%
+    }
+
+}
