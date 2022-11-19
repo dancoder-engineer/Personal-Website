@@ -13,7 +13,7 @@ img.style.display = "block"
 if (window.location.href.includes("Japanese")) {
     desc = "./images/portfolioImages/jpnDescription.png"
     notes = "./images/portfolioImages/jpnNotes.png"
-  //  video.src="https://www.youtube.com/embed/BOhMCx3oDoE"
+    video.src="https://www.youtube.com/embed/BOhMCx3oDoE"
 }
 
 function clickNavBar(e) {
