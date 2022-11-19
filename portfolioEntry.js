@@ -17,6 +17,12 @@ if (window.location.href.includes("Japanese")) {
     repo = "https://github.com/dancoder-engineer/JapaneseThroughRetroGaming"
     video.src="https://www.youtube.com/embed/BOhMCx3oDoE"
 }
+else if (window.location.href.includes("Vitamin")) {
+    desc = "./images/portfolioImages/vitaminDescription.png"
+    notes = "./images/portfolioImages/vitaminNotes.png"
+    repo = "https://github.com/dancoder-engineer/vitamin-store"
+    video.src="https://www.youtube.com/embed/x4r2xZQRZBE"
+}
 
 function clickNavBar(e) {
 
