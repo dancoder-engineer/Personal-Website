@@ -23,6 +23,12 @@ else if (window.location.href.includes("Vitamin")) {
     repo = "https://github.com/dancoder-engineer/vitamin-store"
     video.src="https://www.youtube.com/embed/x4r2xZQRZBE"
 }
+else if (window.location.href.includes("Food")) {
+    desc = "./images/portfolioImages/vitaminDescription.png"
+    notes = "./images/portfolioImages/vitaminNotes.png"
+    repo = "https://github.com/dancoder-engineer/FoodPics"
+    video.src="https://www.youtube.com/embed/fkmKXidnFMc"
+}
 
 function clickNavBar(e) {
 
