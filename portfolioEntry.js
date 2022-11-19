@@ -1,10 +1,11 @@
+const img = document.querySelector("#portImg")
+const navBar = document.querySelector("#navBar")
+const video = document.querySelector("#portVideo")
+const foodSite = "https://foodbook-awo0.onrender.com/"
+let clickable = true
 let desc = null
 let notes = null
 let repo = null
-let img = document.querySelector("#portImg")
-let navBar = document.querySelector("#navBar")
-let video = document.querySelector("#portVideo")
-let clickable = true
 
 img.addEventListener("click", clickImg)
 navBar.addEventListener("click", clickNavBar)
@@ -24,8 +25,8 @@ else if (window.location.href.includes("Vitamin")) {
     video.src="https://www.youtube.com/embed/x4r2xZQRZBE"
 }
 else if (window.location.href.includes("Food")) {
-    desc = "./images/portfolioImages/vitaminDescription.png"
-    notes = "./images/portfolioImages/vitaminNotes.png"
+    desc = "./images/portfolioImages/foodDescription.png"
+    notes = "./images/portfolioImages/foodNotes.png"
     repo = "https://github.com/dancoder-engineer/FoodPics"
     video.src="https://www.youtube.com/embed/fkmKXidnFMc"
 }
@@ -67,7 +68,7 @@ function clickNavBar(e) {
             video.style.display = "none"
             img.src = notes
         }
-        else if (repoTruth) { location.href = repo}
+        else if (repoTruth) { location.href = repo }
         else if (videoTruth) { showVideo() }
  
 }
@@ -81,16 +82,25 @@ function clickImg(e) {
     let changableWidth = xPos/e.target.clientWidth
     let changableHeight = yPos/e.target.clientHeight
 
-    let positions = {
-        backTop: 4/336,
-        backBottom: 33/336,
-        backLeft: 8/449,
-        backRight: 42/449
+    let backPositions = {
+        top: 4/336,
+        bottom: 33/336,
+        left: 8/449,
+        right: 42/449
     }
 
-    let backTruth = (changableWidth >= positions.backLeft && changableWidth <= positions.backRight && changableHeight >= positions.backTop && changableHeight <= positions.backBottom)
+    let sitePositions = {
+        top: 259/297,
+        bottom: 291/297,
+        left: 5/446,
+        right: 114/446
+    }
+
+    let backTruth = (changableWidth >= backPositions.left && changableWidth <= backPositions.right && changableHeight >= backPositions.top && changableHeight <= backPositions.bottom)
+    let siteTruth = (changableWidth >= sitePositions.left && changableWidth <= sitePositions.right && changableHeight >= sitePositions.top && changableHeight <= sitePositions.bottom)
 
     if(backTruth) { fadeToBack() }
+    else if (window.location.href.includes("Food") && siteTruth) { location.href = foodSite }
 }
 
 function showVideo() { 
