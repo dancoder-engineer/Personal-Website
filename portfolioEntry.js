@@ -1,5 +1,5 @@
-let desc = "./images/portfolioImages/jpnDescription.png"
-let notes = "./images/portfolioImages/jpnNotes.png"
+let desc = null
+let notes = null
 let img = document.querySelector("#portImg")
 let navBar = document.querySelector("#navBar")
 let video = document.querySelector("#portVideo")
@@ -7,7 +7,14 @@ let clickable = true
 
 img.addEventListener("click", clickImg)
 navBar.addEventListener("click", clickNavBar)
+img.style.display = "block"
 
+
+if (window.location.href.includes("Japanese")) {
+    desc = "./images/portfolioImages/jpnDescription.png"
+    notes = "./images/portfolioImages/jpnNotes.png"
+  //  video.src="https://www.youtube.com/embed/BOhMCx3oDoE"
+}
 
 function clickNavBar(e) {
 
@@ -44,12 +51,6 @@ function clickNavBar(e) {
         }
         else if (videoTruth) { showVideo() }
  
-
-    
-
-  //  console.log(xPos, yPos)
-   
-
 }
 
 function clickImg(e) {
@@ -73,7 +74,7 @@ function clickImg(e) {
     if(backTruth) { fadeToBack() }
 }
 
-function showVideo() {
+function showVideo() { 
     if (img.style.display === "block") {
         img.style.display = "none";
         video.style.display = "block";
