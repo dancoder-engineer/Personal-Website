@@ -5,8 +5,6 @@ document.addEventListener("DOMContentLoaded", init)
 let mainImg = document.querySelector("#portImg")
 mainImg.addEventListener("click", clickImg)
 
-
-let state = 0
 let clickable = true
 
 function init() {
@@ -38,11 +36,12 @@ function clickImg(e) {
     let vitaminTruth = (changableWidth >= positions.vitaminLeft && changableWidth <= positions.vitaminRight)
     let foodTruth = (changableWidth >= positions.foodLeft && changableWidth <= positions.foodRight)
      
-    if(!rightHeight) { return 0 }
-    if(jpnTruth) { fadeImg("./portfolioJapanese.html") }
-    else if (vitaminTruth) { fadeImg("./portfolioVitamins.html") }
-    else if (foodTruth) { fadeImg("./portfolioFood.html") }
- 
+    if(rightHeight) { 
+        if(jpnTruth) { fadeImg("./portfolioJapanese.html") }
+        else if (vitaminTruth) { fadeImg("./portfolioVitamins.html") }
+        else if (foodTruth) { fadeImg("./portfolioFood.html") }
+    }
+    
 }
 
 function fadeImg(url) {
