@@ -20,7 +20,7 @@
     background-color: black;
 }
 
-@media only screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 1000px) {
 
     #portImg {
         display: block;
