@@ -1,5 +1,6 @@
 let desc = null
 let notes = null
+let repo = null
 let img = document.querySelector("#portImg")
 let navBar = document.querySelector("#navBar")
 let video = document.querySelector("#portVideo")
@@ -13,6 +14,7 @@ img.style.display = "block"
 if (window.location.href.includes("Japanese")) {
     desc = "./images/portfolioImages/jpnDescription.png"
     notes = "./images/portfolioImages/jpnNotes.png"
+    repo = "https://github.com/dancoder-engineer/JapaneseThroughRetroGaming"
     video.src="https://www.youtube.com/embed/BOhMCx3oDoE"
 }
 
@@ -26,16 +28,20 @@ function clickNavBar(e) {
         descLeft: 2/449,
         descRight: 126/449,
         notesLeft: 130/449,
-        notesRight: 349/449,
-        videoLeft: 352/449,
+        notesRight: 284/449,
+        repoLeft: 287/449,
+        repoRight: 374/449,
+        videoLeft: 377/449,
         videoRight: 446/449,
         topOfBar: 303/336,
         bottom: 336/336,
     }
 
     let changableWidth = xPos/e.target.clientWidth
+
     let descTruth = (changableWidth >= positions.descLeft && changableWidth <= positions.descRight)
     let notesTruth = (changableWidth >= positions.notesLeft && changableWidth <= positions.notesRight)
+    let repoTruth = (changableWidth >= positions.repoLeft && changableWidth <= positions.repoRight)
     let videoTruth = (changableWidth >= positions.videoLeft && changableWidth <= positions.videoRight)
 
 
@@ -49,6 +55,7 @@ function clickNavBar(e) {
             video.style.display = "none"
             img.src = notes
         }
+        else if (repoTruth) { location.href = repo}
         else if (videoTruth) { showVideo() }
  
 }
