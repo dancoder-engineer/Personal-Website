@@ -4,6 +4,24 @@
     width: 50%
 }
 
+#portImg1 {
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 50%;
+    left: 25%
+}
+
+#portImg2 {
+    position: absolute;
+    display: none;
+    margin: auto;
+    width: 50%;
+    width: 50%;
+    left: 25%
+
+}
+
 #navBar {
     display: block;
     margin: auto;
@@ -24,6 +42,18 @@
 
     #portImg {
         display: block;
+        margin: auto;
+        width: 95%
+    }
+
+    #portImg1 {
+        display: block;
+        margin: auto;
+        width: 95%
+    }
+
+    #portImg2 {
+        display: none;
         margin: auto;
         width: 95%
     }

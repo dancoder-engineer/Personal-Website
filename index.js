@@ -2,13 +2,14 @@
 
 document.addEventListener("DOMContentLoaded", init)
 
-let mainImg = document.querySelector("#portImg")
+let mainImg = document.querySelector("img")
+let frontImg = 0
 mainImg.addEventListener("click", clickImg)
 
 let clickable = true
 
 function init() {
-    console.log("init")
+    return 0
 }
 
 function clickImg(e) {
@@ -29,18 +30,32 @@ function clickImg(e) {
         folderBottom: 52/336
     }
 
+    let aboutPositions = {
+        top: 240/336,
+        bottom: 302/336,
+        left: 36/447,
+        right: 153/447
+    }
+
+    console.log(xPos, yPos)
+
+    
+   
+
     let changableWidth = xPos/e.target.clientWidth
     let changableHeight = yPos/e.target.clientHeight
     let rightHeight = (changableHeight >= positions.top && changableHeight <= positions.folderBottom)
     let jpnTruth = (changableWidth >= positions.jpnLeft && changableWidth <= positions.jpnRight)
     let vitaminTruth = (changableWidth >= positions.vitaminLeft && changableWidth <= positions.vitaminRight)
     let foodTruth = (changableWidth >= positions.foodLeft && changableWidth <= positions.foodRight)
-     
+    let aboutTruth = (changableWidth >= aboutPositions.left && changableWidth <= aboutPositions.right && changableHeight >= aboutPositions.top && changableHeight <= aboutPositions.bottom)
+  
     if(rightHeight) { 
         if(jpnTruth) { fadeImg("./portfolioJapanese.html") }
         else if (vitaminTruth) { fadeImg("./portfolioVitamins.html") }
         else if (foodTruth) { fadeImg("./portfolioFood.html") }
     }
+    else if (aboutTruth) { fadeImg("./portfolioAbout.html") }
     
 }
 
